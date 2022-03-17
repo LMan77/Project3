@@ -389,8 +389,8 @@ def user_stats(df):
 
 def raw_data(df):
         
-     """Displays the data due filteration.
-      5 rows will "added in each press"""
+     """Display the raw data.
+        5 rows will be added in each press"""
       
      print('Press "enter" to continuously view 5 rows data of individual trip data or enter "no" to skip:')
      start_loc = 0
