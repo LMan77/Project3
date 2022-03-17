@@ -4,6 +4,9 @@ import pandas as pd
 import numpy as np
 
 
+"""
+Proposed Changes - (1)
+Merging of all 3 datasets to have a new dataframe
 
 
 df1 = pd.read_csv("chicago.csv")
@@ -22,7 +25,7 @@ df41 = pd.concat(frames)
 
 df = df41
 
-   
+"""
     
         
         

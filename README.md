@@ -48,6 +48,9 @@ Files included for analysis is Bikeshare Data.zip which has 3 datasets namely:\
    o Visual Studio Code initially Atom\
    o Git for Windows
 
+### Proposed Changes
+* Merging of all 3 datasets by adding new columns in washington.csv 
+
 
 ### Credits
 - Github repositories - https://github.com/search?q=bikeshare+udacity
