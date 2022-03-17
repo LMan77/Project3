@@ -172,7 +172,7 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
     
-  # Extract month from Start Time, new column
+  # Extract Month from Start Time, new column
 
     df['month'] = df['Start Time'].dt.month 
     
@@ -194,7 +194,8 @@ def load_data(city, month, day):
 
       df = df[df['month'] == month]    
       
-   # filter by day of week if applicable
+   # Filter by day of week when applicable
+
       if day != 'all':
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day.title()]
@@ -224,7 +225,7 @@ def time_stats(df):
     elif MCM == 6:
          print("The most common month is:","June")
     else:
-         print("Not possible to commute")
+         print("Not possible to compute at the moment")
                               
     print("")
          
@@ -272,21 +273,21 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip\n')
     start_time = time.time()
 
-    # Display most commonly used start station
+    # Display the most commonly used start station
 
     MCUST = df['Start Station'].value_counts().idxmax()
     
     print("The most common start station is: ", MCUST)
     print("")
 
-    # Display most commonly used end station
+    # Display the most commonly used end station
 
     MCUES = df['End Station'].value_counts().idxmax()
     
     print("The most common end station is: ", MCUES)
     print("")
 
-    # Display most frequent combination of start station and end station trip
+    # Display the most frequent combination of start station and end station trip
 
     print("Most frequent combination of start station and end station trip")
     print("")   
@@ -318,7 +319,7 @@ def trip_duration_stats(df):
     print("Total Travel Time (hours) :",TTLH1, "hours")
     print("")
 
-    # Display mean travel time
+    # Display Mean Travel Time
     
     MTL = df['Trip Duration'].mean()
     MTLM = (MTL)/60
@@ -340,7 +341,7 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
-    # Display counts of user types
+    # Display Count of user types
 
     CUT = df['User Type'].value_counts()
     print("Counts of User Types:")
@@ -349,7 +350,7 @@ def user_stats(df):
     
     print("")
    
-    # Display counts of gender
+    # Display Count of gender
 
     CG = df['Gender'].value_counts()
     
