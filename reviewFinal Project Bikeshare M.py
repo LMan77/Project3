@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 """
-First Proposed Change - (1)
+------- First Proposed Change - (1)
 
 Merging of all 3 datasets into 1 by following the below steps
 Use a new dataframe which is df41
@@ -25,8 +25,54 @@ df41 = pd.concat(frames)
 
 df = df41
 
+
+-------- Second Proposed Change - (2)
+
+Review and improve Readability of all codes 
+
+
+-------- Third Proposed Change - (3) 
+
+Important change to counter error in dataset for Washington.
+All metrics affected have been considered.
+
+
+    # Display counts of gender
+
+    try:
+      CG = df['Gender'].value_counts()
+      print('\nCount of Gender:', CG)
+    except KeyError:
+      print("\nSorry, No data available at the moment.")
+
+    # Display earliest, most recent, and most common year of birth
+    
+    # Earliest year of birth
+
+    try:
+      EYB = df['Birth Year'].min()
+      print('\n The earliest year of birth:', EYB)
+    except KeyError:
+      print("\nSorry, No data available at the moment.")
+
+    # Most recent year of birth
+
+    try:
+      MRYB = df['Birth Year'].max()
+      print('\nThe most recent year of birth:', MRYB)
+    except KeyError:
+      print("\nSorry, No data available at the moment.")
+
+    # Most common year of birth
+
+    try:
+      MCYB = df['Birth Year'].value_counts().idxmax()
+      print('\nThe most common year is:', MCYB)
+    except KeyError:
+      print("\nSorry, No data available at the moment.")
+
 """   
-      
+     
           
 def check_data_entry(prompt, valid_entries): 
     """
@@ -312,16 +358,22 @@ def user_stats(df):
     
     # Display earliest, most recent, and most common year of birth
 
+    # Earliest year of birth
+
     EYB = int(df['Birth Year'].min())
    
     print("The earliest year of birth is:",EYB)
     print("")
         
     print("")
-    
+     
+    # Most recent year of birth
+     
     MRYB = int(df['Birth Year'].max())
     print("The most recent year of birth is:",MRYB)
     print("")
+
+    # Most common year of birth
     
     MCYB = int(df['Birth Year'].value_counts().idxmax())
     print("The most common year of birth is:",MCYB)
