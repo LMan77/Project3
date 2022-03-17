@@ -233,17 +233,19 @@ def time_stats(df):
     MCDW = df['day_of_week'].value_counts().idxmax()
     
     if MCDW == 1:
-         print("The most common day of week is:", "Tuesday")
+         print("The most common day of week is:", "Monday")
     elif MCDW== 2:
-         print("The most common day of week is:", "Wednesday")
+         print("The most common day of week is:", "Tuesday")
     elif MCDW == 3:
-         print("The most common day of week is:", "Thursday")
+         print("The most common day of week is:", "Wednesday")
     elif MCDW == 4:
-         print("The most common day of week is:", "Friday")
+         print("The most common day of week is:", "Thursday")
     elif MCDW == 5:
-         print("The most common day of week is:", "Saturday") 
+         print("The most common day of week is:", "Friday") 
     elif MCDW == 6:
-         print("The most common day of week is:","Sunday")        
+         print("The most common day of week is:","Saturday") 
+    elif MCDW == 7:
+         print("The most common day of week is:","Sunday")            
     else:
          print("The most common day of week is:","Monday")
      
