@@ -25,11 +25,7 @@ df41 = pd.concat(frames)
 
 df = df41
 
-<<<<<<< HEAD
 
-||||||| c01918a
-   
-=======
 
 -------- Second Proposed Change - (2)
 
@@ -51,7 +47,6 @@ All metrics affected have been considered.
       print("\nSorry, No data available at the moment.")
 
     # Display earliest, most recent, and most common year of birth
->>>>>>> refactoring
     
     # Earliest year of birth
 
@@ -424,3 +419,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
+ 
