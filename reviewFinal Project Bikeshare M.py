@@ -3,8 +3,11 @@ import time
 import pandas as pd
 import numpy as np
 
+"""
+First Proposed Change - (1)
 
-
+Merging of all 3 datasets into 1 by following the below steps
+Use a new dataframe which is df41
 
 df1 = pd.read_csv("chicago.csv")
 df11 = df1.assign(city = 'chicago')
@@ -22,7 +25,7 @@ df41 = pd.concat(frames)
 
 df = df41
 
-   
+"""   
     
         
         
