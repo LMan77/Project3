@@ -50,6 +50,7 @@ Files included for analysis is Bikeshare Data.zip which has 3 datasets namely:\
 
 ### Proposed Changes
 * Merging of all 3 datasets by adding new columns in washington.csv 
+* Improve Readability of .py File
 
 
 ### Credits
