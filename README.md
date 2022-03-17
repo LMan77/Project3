@@ -1,36 +1,47 @@
 ### Date created
-Project initiated on the 07/03/2022 an reviewed on 14/04/2022
+Project initiated on the 07/03/2022 and reviewed on 14/04/2022
 
 ### Project Title
 Exploring US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+This project performs a descriptive analysis to compute various metrics as mentioned below in "Statistics Computed" across 3 cities in US, namely, Chicago, Washington and New York City. The script used prompts the user to filter across day, month, and city to have specific metrics to generate an interactive experience.
+    
+    * Please note the month data only consider the first 6 months (January to June).
+
 
 ### Statistics Computed
 
 1.	Popular times of travel:\
-     o	most common month\
-     o	most common day of week\
-     o	most common hour of day
+     o	Most common month\
+     o	Most common day of week\
+     o	Most common start hour of day
 2.	Popular stations and trip:\
-     o	most common start station\
-     o	most common end station\
-     o	most common trip from start to end 
-3.	Trip duration:\
-     o	total travel time\
-     o	average travel time
+     o	Most commonly used start station\
+     o	Most commonly used end station\
+     o	Most frequent combination of start station and end station trip 
+3.	Trip Duration:\
+     o	Total travel time\
+     o	Mean travel time
 
-4.	User info:\
-     o	counts of each user type
-     o	counts of each gender\
-      (only available for NYC and Chicago)\
-     o	earliest, most recent, most common year of birth \
-     (only available for NYC and Chicago)
+4.	User Info:\
+     o	Counts of user types\
+     o	Counts of gender\
+     o	Display earliest, most recent, most common year of birth 
+     
+          * Please note the the last 2 metrics are only available for NYC and Chicago
 
 
 ### Files used
-Include the files used
+Files included for analysis is Bikeshare Data.zip which has 3 datasets namely:\
+    o chicago.csv\
+    o new_york_city.csv\
+    o washington.csv
+ 
+ 
+    * Please note that the dataset for washington.csv does not include 2 columns which are 'Gender' and 'Birth Year'
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+- Github repositories - https://github.com/search?q=bikeshare+udacity
+- Initially forked from - https://github.com/udacity/pdsnd_github
+- Udacity Online Classroom - 
