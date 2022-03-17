@@ -1,4 +1,4 @@
-### Date created
+### Date Created
 Project initiated on the 07/03/2022 and reviewed on 14/04/2022
 
 ### Project Title
@@ -16,10 +16,12 @@ This project performs a descriptive analysis to compute various metrics as menti
      o	Most common month\
      o	Most common day of week\
      o	Most common start hour of day
+
 2.	Popular stations and trip:\
      o	Most commonly used start station\
      o	Most commonly used end station\
      o	Most frequent combination of start station and end station trip 
+
 3.	Trip Duration:\
      o	Total travel time\
      o	Mean travel time
@@ -32,7 +34,7 @@ This project performs a descriptive analysis to compute various metrics as menti
           * Please note the the last 2 metrics are only available for NYC and Chicago
 
 
-### Files used
+### Files Used
 Files included for analysis is Bikeshare Data.zip which has 3 datasets namely:\
     o chicago.csv\
     o new_york_city.csv\
@@ -41,7 +43,13 @@ Files included for analysis is Bikeshare Data.zip which has 3 datasets namely:\
  
     * Please note that the dataset for washington.csv does not include 2 columns which are 'Gender' and 'Birth Year'
 
+### Software Employed
+   o Spyder (anaconda3)\
+   o Visual Studio Code initially Atom\
+   o Git for Windows
+
+
 ### Credits
 - Github repositories - https://github.com/search?q=bikeshare+udacity
 - Initially forked from - https://github.com/udacity/pdsnd_github
-- Udacity Online Classroom - 
+- Udacity Online Classroom 
